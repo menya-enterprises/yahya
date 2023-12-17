@@ -1,0 +1,47 @@
+.app__menu {
+    flex-direction: column;
+    background-color: var(--color-black);
+}
+
+.app__menu-carousel {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    overflow-x: none;
+    color: var(--color-lightSilver);
+}
+
+.menu__category {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+
+}
+
+.headtext__tenor {
+    color: var(--color-gold);
+}
+
+.category__inventory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+@media screen and (max-width: 950px) {
+    .category__inventory {
+        flex-direction: column;
+    }
+    .category__inventory div {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+  }
