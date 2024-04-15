@@ -5,9 +5,12 @@ import { GiCrossedAirFlows } from 'react-icons/gi';
 import images from '../../constants/images';
 
 import "./NavBar.css"
+import { useTranslation } from 'react-i18next';
+import { FaLanguage } from "react-icons/fa6";
 
-function NavBar() {
+function NavBar({handleChangeLanguage}) {
   const [toggleMenu, setToggleMenu] = React.useState(false);
+  const [t, i18n] = useTranslation("global");
 
   return (
     <nav className='app__navbar'>
@@ -15,31 +18,45 @@ function NavBar() {
         <img src={images.logo} alt="logo" />
       </div>
       <ul className='app__navbar-links'>
-        <li className="p__opensans"><a href='#home'>Home</a></li>
-        <li className="p__opensans"><a href='#about'>About</a></li>
-        <li className="p__opensans"><a href='#menu'>Menu</a></li>
-        <li className="p__opensans"><a href='#contact'>Contact</a></li>
+        <li className="p__opensans"><a href='#home'>{t("navbar.home")}</a></li>
+        <li className="p__opensans"><a href='#about'>{t("navbar.about")}</a></li>
+        <li className="p__opensans"><a href='#menu'>{t("navbar.menu")}</a></li>
+        <li className="p__opensans"><a href='#contact'>{t("navbar.contact")}</a></li>
       </ul>
+      <div className="app__navbar-lang">
+        <li className="dropdown">
+            <button className="dropdown-button"><FaLanguage size={32} /></button>
+            <div className="dropdown-content">
+                <button onClick={(e) => handleChangeLanguage((e.target.innerText).toLowerCase())}>EN</button>
+                <button onClick={(e) => handleChangeLanguage((e.target.innerText).toLowerCase())}>JA</button>
+                <button onClick={(e) => handleChangeLanguage((e.target.innerText).toLowerCase())}>CN</button>
+            </div>
+        </li>
+      </div>
       <div className='app__navbar-order'>
-        <a href='https://www.doordash.com/en-CA/store/yah-yah-ya-ramen-richmond-576879/' className='p__opensans' target='_blank'>Doordash</a>
+        <a href='https://www.doordash.com/en-CA/store/yah-yah-ya-ramen-richmond-576879/' className='p__opensans' target='_blank' rel="noreferrer">Doordash</a>
         <div/>
-        <a href='https://www.fantuanorder.com/store/yah-yah-ya-ramen/ca-5202/' className='p__opensans' target='_blank'>Fantuan</a>
+        <a href='https://www.fantuanorder.com/store/yah-yah-ya-ramen/ca-5202/' className='p__opensans' target='_blank' rel="noreferrer">Fantuan</a>
       </div>
       <div className='app__navbar-smallscreen'>
         <GiHamburgerMenu color='#fff' fontSize={27} onClick={() => setToggleMenu(true)} />
-
         {toggleMenu && (
-          <div className='app__navbar-smallscreen_overlay flex__center'>
+          <div className='app__navbar-smallscreen_overlay flex__center slide-bottom'>
             <GiCrossedAirFlows
               fontSize={27}
               className='overlay__close'
               onClick={() => setToggleMenu(false)}
               />
             <ul className='app__navbar-smallscreen_links'>
-              <li className="p__opensans"><a href='#home'></a>Home</li>
-              <li className="p__opensans"><a href='#about'></a>About</li>
-              <li className="p__opensans"><a href='#menu'></a>Menu</li>
-              <li className="p__opensans"><a href='#contact'></a>Contact</li>
+              <li className="p__opensans"><a href='#home' onClick={() => setToggleMenu(false)}>{t("navbar.home")}</a></li>
+              <li className="p__opensans"><a href='#about' onClick={() => setToggleMenu(false)}>{t("navbar.about")}</a></li>
+              <li className="p__opensans"><a href='#menu' onClick={() => setToggleMenu(false)}>{t("navbar.menu")}</a></li>
+              <li className="p__opensans"><a href='#contact' onClick={() => setToggleMenu(false)}>{t("navbar.contact")}</a></li>
+              <li className='app__navbar-order p__opensans'>
+                <a href='https://www.doordash.com/en-CA/store/yah-yah-ya-ramen-richmond-576879/' onClick={() => setToggleMenu(false)} className='p__opensans' target='_blank' rel="noreferrer">Doordash</a>
+                <div/>
+                <a href='https://www.fantuanorder.com/store/yah-yah-ya-ramen/ca-5202/' onClick={() => setToggleMenu(false)} className='p__opensans' target='_blank' rel="noreferrer">Fantuan</a>
+            </li>
             </ul>
           </div>
         )}

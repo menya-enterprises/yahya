@@ -41,7 +41,7 @@
     position: absolute;
     inset: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.85);
 }
 
 .app__aboutUs-video_overlay-circle {
@@ -74,3 +74,17 @@
         line-height: 30px;
     }
   }
+
+@media screen and (max-height: 500px) {
+    .app__aboutUs p {
+        font-size: 16px;
+    }
+
+    .app__aboutUs img {
+        width: 30%;
+    }
+
+    .app__aboutUs-content {
+        flex-direction: row;
+    }
+}

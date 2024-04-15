@@ -1,3 +1,140 @@
 .app__findUs {
     background: var(--color-black);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5rem;
+    border-top: 1rem solid var(--color-gold);
+}
+
+.app__findUs-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 400px;
+    width: 500px;
+}
+
+.app__findUs-identity {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__developer a:hover {
+    color: var(--color-gold)
+}
+
+.identity-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.identity-logo img {
+    width: 350px;
+}
+
+.identity-map {
+    width: 500px;
+    height: 300px;
+}
+
+.findUs__identity {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.findUs__identity-social {
+    display: flex;
+    gap: 1rem;
+    padding: 0 0 0 0.5rem;
+}
+
+.findUs__hours ul {
+    list-style: none;
+}
+
+h1 {
+    font: var(--font-alt);
+    font-size: 30px;
+    color: var(--color-lightSilver);
+}
+
+.headtext__tenor {
+    font-size: 64px;
+}
+
+.p__opensans {
+    color: var(--color-darkSilver);
+}
+
+.horizontal__divider {
+    width: 80%;
+    border-color: var(--color-darkSilver);
+}
+
+
+@media screen and (max-width: 1150px) {
+    .app__findUs-info {
+        align-items: flex-start;
+    }
+
+    .horizontal__divider {
+        width: 40%;
+        border-color: var(--color-darkSilver);
+    }
+
+    .headtext__tenor {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .app__findUs-info {
+        padding: 0 2rem 0 2rem;
+    }
+
+    .app__findUs {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .identity-map {
+        height: 200px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .app__findUs-info {
+        padding: 0;
+        width: 350px;
+    }
+
+    .app__findUs {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .identity-map {
+        height: 200px;
+        width: 350px;
+    }
+
+    .app__findUs-identity {
+        width: 350px;
+    }
+
+    .headtext__tenor {
+        font-size: 50px;
+    }
 }

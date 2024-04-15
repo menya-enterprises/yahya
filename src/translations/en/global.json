@@ -1,0 +1,30 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "menu": "Menu",
+        "contact": "Contact us"
+    },
+    "banner": {
+        "title": "THE TASTE OF TRADITION",
+        "subtitle": "An authentic ramen that honour the rich culinary heritage of Japan. Our chefs use only the freshest ingredients, and carefully prepare each bowl of ramen with the utmost attention to detail.",
+        "button": "Explore Menu"   
+    },
+    "about": {
+        "message": "The hallmark of our broth is Tonkotsu Shoyu. To make it, we carefully simmer a blend of pork backbones, pork knuckles, chicken bones, kombu, and vegetables.\nThis results in a rich broth which infused with soy sauce, green onions, and garlic.\nThe finishing touch is the addition of chicken oil (chīyu), creating the distinctive flavor profile of our Yah Yah Ya ramen."
+    },
+    "contact": {
+        "title": "Contact Us",
+        "address": {
+            "title": "Address"
+        },
+        "hours": {
+            "openHours": "Open Hours",
+            "hoursInfo": {
+                "open": "Tuesday to Sunday: 11AM - 2:30PM, 5PM - 9PM ",
+                "closed": "Monday: Closed"
+            }  
+        },
+        "callUs": "Call Us"
+    }
+}

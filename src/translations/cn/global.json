@@ -1,0 +1,30 @@
+{
+    "navbar": {
+        "home": "主页",
+        "about": "关于我们",
+        "menu": "菜单",
+        "contact": "联系我们"
+    },
+    "banner": {
+        "title": "传统的味道",
+        "subtitle": "尊重日本丰富的烹饪传统，我们只提供最正宗的日本横滨家系拉面。我们经过多年培训的厨师只使用最新鲜的食材，为每一位顾客精心准备每一碗拉面，极其注重细节.",
+        "button": "查看菜单"   
+    },
+    "about": {
+        "message": "The hallmark of our broth is Tonkotsu Shoyu.<br/>To make it, we carefully simmer a blend of pork backbones, pork knuckles, chicken bones, kombu, and vegetables.<br/>This results in a rich broth which infused with soy sauce, green onions, and garlic.<br/>The finishing touch is the addition of chicken oil (chīyu), creating the distinctive flavor profile of our Yah Yah Ya ramen."
+    },
+    "contact": {
+        "title": "联系我们",
+        "address": {
+            "title": "地址"
+        },
+        "hours": {
+            "openHours": "营业时间",
+            "hoursInfo": {
+                "open": "Tuesday to Sunday: 11AM - 2:30PM, 5PM - 9PM ",
+                "closed": "Monday: Closed"
+            }  
+        },
+        "callUs": "致电"
+    }
+}
