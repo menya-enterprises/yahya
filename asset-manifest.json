@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/yahyahya/static/css/main.e6b66b04.css",
-    "main.js": "/yahyahya/static/js/main.892257ad.js",
+    "main.css": "/yahyahya/static/css/main.e4442f10.css",
+    "main.js": "/yahyahya/static/js/main.7738e91a.js",
     "static/media/background.png": "/yahyahya/static/media/background.3d421b1b5682e1b67deb.png",
     "static/media/promo_video.mp4": "/yahyahya/static/media/promo_video.208af97772ab032928a2.mp4",
     "static/media/826393.jpg": "/yahyahya/static/media/826393.d07aa0f0cefaa7caf6e6.jpg",
@@ -12,6 +12,7 @@
     "static/media/826395.jpg": "/yahyahya/static/media/826395.704f481666d0ccc07adc.jpg",
     "static/media/ramen_header.jpg": "/yahyahya/static/media/ramen_header.7e3d2b872e6a4e27f0da.jpg",
     "static/media/1867135.jpg": "/yahyahya/static/media/1867135.a8064fe3a59bbb3bf185.jpg",
+    "static/media/chef.png": "/yahyahya/static/media/chef.ad90520fabd93c49b1fc.png",
     "static/media/826384.jpg": "/yahyahya/static/media/826384.bfcc22f05d61b4289a0f.jpg",
     "static/media/1867122.jpg": "/yahyahya/static/media/1867122.7f96f78151c6109bb8b8.jpg",
     "static/media/1867123.jpg": "/yahyahya/static/media/1867123.7f96f78151c6109bb8b8.jpg",
@@ -26,6 +27,7 @@
     "static/media/1867131.jpg": "/yahyahya/static/media/1867131.43d7599ba74a290ee8ed.jpg",
     "static/media/1867128.jpg": "/yahyahya/static/media/1867128.2be63290a2bb9ba77a57.jpg",
     "static/media/1867129.jpg": "/yahyahya/static/media/1867129.2be63290a2bb9ba77a57.jpg",
+    "static/media/store_richmond.jpg": "/yahyahya/static/media/store_richmond.d11197144f0d32e14380.jpg",
     "static/media/1867126.jpg": "/yahyahya/static/media/1867126.1f4b5471c3a280adcb69.jpg",
     "static/media/1867127.jpg": "/yahyahya/static/media/1867127.1f4b5471c3a280adcb69.jpg",
     "static/media/1867124.jpg": "/yahyahya/static/media/1867124.93464fa1196f1c6a39a1.jpg",
@@ -54,11 +56,11 @@
     "static/media/1867145.jpg": "/yahyahya/static/media/1867145.f78840943f9ee2d1d634.jpg",
     "static/media/826400.jpg": "/yahyahya/static/media/826400.401a5f94f29099fb3b99.jpg",
     "index.html": "/yahyahya/index.html",
-    "main.e6b66b04.css.map": "/yahyahya/static/css/main.e6b66b04.css.map",
-    "main.892257ad.js.map": "/yahyahya/static/js/main.892257ad.js.map"
+    "main.e4442f10.css.map": "/yahyahya/static/css/main.e4442f10.css.map",
+    "main.7738e91a.js.map": "/yahyahya/static/js/main.7738e91a.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6b66b04.css",
-    "static/js/main.892257ad.js"
+    "static/css/main.e4442f10.css",
+    "static/js/main.7738e91a.js"
   ]
 }
