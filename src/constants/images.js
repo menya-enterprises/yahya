@@ -49,13 +49,17 @@ import img826400 from "../assets/menu/826400.jpg"
 import img1867115 from "../assets/menu/1867115.jpg"
 import img1867135 from "../assets/menu/1867135.jpg"
 import img826393 from "../assets/menu/826393.jpg"
+import chef from "../assets/chef.png";
+import store_richmond from "../assets/store_richmond.jpg";
 
-
+// eslint-disable-next-line
 export default {
   logo,
   header01,
   background,
   ramen,
+  chef,
+  store_richmond,
   img1867117,
   img1867118,
   img1867119,

@@ -1,0 +1,55 @@
+.app__gallery {
+    min-height: 100vh;
+    justify-content: center;
+    color: var(--color-gold);
+    position: relative;
+    flex-direction: column;
+}
+
+.app__gallery-carousel {
+    max-width: 100%;
+    height: 80vh;
+}
+
+.app__gallery-carousel .slider {
+    height: 100%;
+}
+
+.app__gallery-carousel .carousel-slider {
+    width: 100%;
+    height: 100%;
+}
+
+.app__gallery-carousel li {
+    list-style: none;
+}
+
+.app__gallery-carousel > div {
+    overflow: hidden;
+}
+
+.app__gallery-carousel > div > div {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery__item {
+    width: 100%;
+    height: 100%;
+
+}
+
+.gallery__item-img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery__item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  
+}

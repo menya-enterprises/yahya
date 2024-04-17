@@ -28,7 +28,7 @@ i18next
     },
     interpolation: {escapeValue: false}, //change to true later
     fallbackLng: 'en',
-    supportedLng: ['en', 'ja', 'cn'],
+    supportedLng: ['en', 'ja', 'zh'],
     resources: {
         en: {
           global: global_en
@@ -36,7 +36,7 @@ i18next
         ja: {
           global: global_jp
         },
-        cn: {
+        zh: {
           global: global_cn
         }
     }

@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 
 
 function FindUs() {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   return (
     <div className='app__findUs app__wrapper section__padding' id="contact">
@@ -22,7 +22,7 @@ function FindUs() {
         <div className='findUs__hours'>
           <h1>{t("contact.hours.openHours")}</h1>
           <ul>
-            <li className='p__opensans' style={{"white-space": "pre-line"}}>{t("contact.hours.hoursInfo.open")}</li>
+            <li className='p__opensans' style={{whiteSpace: "pre-line"}}>{t("contact.hours.hoursInfo.open")}</li>
             <li className='p__opensans'>{t("contact.hours.hoursInfo.closed")}</li>
           </ul>
         </div>
@@ -56,7 +56,7 @@ function FindUs() {
             </iframe>
           </div>
         <div className='app__developer' style={{marginTop: "1rem"}}>
-          <p className='p__opensans'>Developed by <a href='https://nikitakostin.com' target='_blank' style={{textDecoration: "underline"}}>Nikita Kostin</a></p>
+          <p className='p__opensans'>Developed by <a href='https://nikitakostin.com' target='_blank' rel="noreferrer" style={{textDecoration: "underline"}}>Nikita Kostin</a></p>
         </div>
       </div>
 

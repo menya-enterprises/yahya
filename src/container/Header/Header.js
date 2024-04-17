@@ -6,7 +6,7 @@ import images from '../../constants/images';
 import { useTranslation } from 'react-i18next';
 
 function Header() {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
   return (
     <div className='app__header app__wrapper section__padding' id='home'>
       <div className='app__wrapper_info'>

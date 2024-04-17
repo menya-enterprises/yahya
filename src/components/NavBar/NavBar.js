@@ -10,17 +10,19 @@ import { FaLanguage } from "react-icons/fa6";
 
 function NavBar({handleChangeLanguage}) {
   const [toggleMenu, setToggleMenu] = React.useState(false);
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   return (
     <nav className='app__navbar'>
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        <a href='/'><img src={images.logo} alt="logo" /></a> 
       </div>
       <ul className='app__navbar-links'>
-        <li className="p__opensans"><a href='#home'>{t("navbar.home")}</a></li>
+        {/* <li className="p__opensans"><a href='#home'>{t("navbar.home")}</a></li> */}
         <li className="p__opensans"><a href='#about'>{t("navbar.about")}</a></li>
         <li className="p__opensans"><a href='#menu'>{t("navbar.menu")}</a></li>
+        <li className="p__opensans"><a href='#news'>{t("navbar.news")}</a></li>
+        <li className="p__opensans"><a href='#gallery'>{t("navbar.gallery")}</a></li>
         <li className="p__opensans"><a href='#contact'>{t("navbar.contact")}</a></li>
       </ul>
       <div className="app__navbar-lang">
@@ -29,7 +31,7 @@ function NavBar({handleChangeLanguage}) {
             <div className="dropdown-content">
                 <button onClick={(e) => handleChangeLanguage((e.target.innerText).toLowerCase())}>EN</button>
                 <button onClick={(e) => handleChangeLanguage((e.target.innerText).toLowerCase())}>JA</button>
-                <button onClick={(e) => handleChangeLanguage((e.target.innerText).toLowerCase())}>CN</button>
+                <button onClick={(e) => handleChangeLanguage(("zh").toLowerCase())}>CN</button>
             </div>
         </li>
       </div>
@@ -48,9 +50,11 @@ function NavBar({handleChangeLanguage}) {
               onClick={() => setToggleMenu(false)}
               />
             <ul className='app__navbar-smallscreen_links'>
-              <li className="p__opensans"><a href='#home' onClick={() => setToggleMenu(false)}>{t("navbar.home")}</a></li>
+              {/* <li className="p__opensans"><a href='#home' onClick={() => setToggleMenu(false)}>{t("navbar.home")}</a></li> */}
               <li className="p__opensans"><a href='#about' onClick={() => setToggleMenu(false)}>{t("navbar.about")}</a></li>
               <li className="p__opensans"><a href='#menu' onClick={() => setToggleMenu(false)}>{t("navbar.menu")}</a></li>
+              <li className="p__opensans"><a href='#news' onClick={() => setToggleMenu(false)}>{t("navbar.news")}</a></li>
+              <li className="p__opensans"><a href='#gallery' onClick={() => setToggleMenu(false)}>{t("navbar.gallery")}</a></li>
               <li className="p__opensans"><a href='#contact' onClick={() => setToggleMenu(false)}>{t("navbar.contact")}</a></li>
               <li className='app__navbar-order p__opensans'>
                 <a href='https://www.doordash.com/en-CA/store/yah-yah-ya-ramen-richmond-576879/' onClick={() => setToggleMenu(false)} className='p__opensans' target='_blank' rel="noreferrer">Doordash</a>

@@ -1,17 +1,25 @@
 {
     "navbar": {
         "home": "Home",
-        "about": "About",
+        "about": "About us",
         "menu": "Menu",
-        "contact": "Contact us"
+        "contact": "Contact us",
+        "gallery": "Gallery",
+        "news": "News"
     },
     "banner": {
         "title": "THE TASTE OF TRADITION",
-        "subtitle": "An authentic ramen that honour the rich culinary heritage of Japan. Our chefs use only the freshest ingredients, and carefully prepare each bowl of ramen with the utmost attention to detail.",
+        "subtitle": "An authentic Japanese Yokohama Iekei ramen that honour the rich culinary heritage of Japan. Our chefs use only the freshest ingredients, and carefully prepare each bowl of ramen with the utmost attention to detail.",
         "button": "Explore Menu"   
     },
     "about": {
-        "message": "The hallmark of our broth is Tonkotsu Shoyu. To make it, we carefully simmer a blend of pork backbones, pork knuckles, chicken bones, kombu, and vegetables.\nThis results in a rich broth which infused with soy sauce, green onions, and garlic.\nThe finishing touch is the addition of chicken oil (chīyu), creating the distinctive flavor profile of our Yah Yah Ya ramen."
+        "message": 
+            {
+                "1": "Iekei Ramen originated in Yokohama city in 1974. Yokohama Ieikei Ramen (横浜家系ラーメン) is commonly referred to as a 'nickname' for ramen shops in Yokohama.\nThe Ieikei broth combines Hakata-style tonkotsu broth and Tokyo-style chicken broth, infused with housemade shoyu, to create an umami-intensive soup. It is then topped with chicken oil.",
+                "2": "Iekei Ramen, also known as family-style ramen, is characterized by its rich tonkotsu soup taste and excellent value.\nIt has become one of the most popular ramen styles in Japan. This popularity is reflected in the presence of Yokohama Iekei ramen (横浜家系ラーメン) shops in cities across Japan.",
+                "3": "Yah-Yah-Ya Ramen opened its first shop in Tokyo. As its popularity grew, Yah-Yah-Ya Ramen expanded within Tokyo and to other cities in Japan.\nIn 2014, the first overseas Yah-Yah-Ya Ramen store was opened in Richmond (BC, Canada), proudly serving the most authentic Japanese Yokohama-style ramen with the traditional cooking process.",
+                "4": "The hallmark of our broth is Yokohama Iekei Tonkotsu.\nWe follow the authentic traditional method, carefully simmering a blend of pork backbones (over 40 kg), pork knuckles (over 20 kg), chicken bones (over 15 kg), kombu, and vegetables every day for eat least 12 hours.\nThis results in a rich natural Tonkotsu broth in which none of any concentrated food ingredients are used.\nThe finishing touch is the addition of house-made chicken oil (chīyu) according to customers' liking, creating the distinctive flavor profile of our Yah-Yah-Ya ramen."
+            }
     },
     "contact": {
         "title": "Contact Us",
