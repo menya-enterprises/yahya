@@ -1,5 +1,5 @@
 .app__header {
-    background-color: black;
+    /* background-color: black; */
 }
 
 .app__wrapper_img {
@@ -17,6 +17,8 @@
     letter-spacing: 0.04em;
     line-height: 117px;
 }
+
+
 
 @media screen and (max-width: 590px) {
     .app__header-h1 {

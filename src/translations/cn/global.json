@@ -3,7 +3,9 @@
         "home": "主页",
         "about": "关于我们",
         "menu": "菜单",
-        "contact": "联系我们"
+        "contact": "联系我们",
+        "gallery": "图片",
+        "news": "消息与更新"
     },
     "banner": {
         "title": "传统的味道",
@@ -11,7 +13,17 @@
         "button": "查看菜单"   
     },
     "about": {
-        "message": "The hallmark of our broth is Tonkotsu Shoyu.<br/>To make it, we carefully simmer a blend of pork backbones, pork knuckles, chicken bones, kombu, and vegetables.<br/>This results in a rich broth which infused with soy sauce, green onions, and garlic.<br/>The finishing touch is the addition of chicken oil (chīyu), creating the distinctive flavor profile of our Yah Yah Ya ramen."
+        "message": {
+            "1": "家系拉面最早追述于1974年的日本横滨. 在日本的家系拉面店铺一般统一使用横滨家系拉面作为招牌. 家系拉面的汤底是属于博多豚骨，自家制酱油和东京鸡骨汤底的完美结合而熬制成型的，配合鸡油的使用，更加突出了汤底的鲜味浓和.",
+            "2": "家系拉面也可称为家庭拉面，在味道浓郁的汤底和高性价比的加持下，逐步成为最受欢迎的日本拉面之一. 在日本，横滨家系拉面的招牌遍布了每个城市的大街小巷.",
+            "3": "家家家拉面成立于日本东京，随着食客的认可，开设了更多店铺。在2014年，家家家拉面来到了温哥华（加拿大），在列治文市开设了第一家海外店铺。在秉持传统工艺料理的前提下，誓为所有客人提供最正宗的横滨家系拉面.",
+            "4": "我们标志性的汤底是横滨家系豚骨. 在烹饪汤底方面，我们坚持使用日本传统手法，每日会选用至少40公斤以上的猪背骨，20公斤以上的猪筒骨，15公斤以上的鸡骨，和大量的昆布与新鲜蔬菜来进行长达最少12小时的时间来熬制. 在坚决不使用任何浓缩食物添加剂的熬制后，我们的汤底呈现出浓厚的正宗纯天然的豚骨汤味.在成品之前，我们会按照客人的喜好添加自家熬制的鸡油，从而呈现出家家家拉面特有的味道."
+        },
+        "title": {
+            "1": "家系拉面的历史",
+            "2": "我们的食谱",
+            "3": "Yah-Yah-Ya Ramen 历史"
+        }
     },
     "contact": {
         "title": "联系我们",
@@ -21,8 +33,8 @@
         "hours": {
             "openHours": "营业时间",
             "hoursInfo": {
-                "open": "Tuesday to Sunday: 11AM - 2:30PM, 5PM - 9PM ",
-                "closed": "Monday: Closed"
+                "open": "星期二至星期五: 11:15AM - 2:30PM, 5PM - 9PM\n星期六至星期日: 11AM - 2:30PM, 5PM - 9PM",
+                "closed": "星期一: 休息"
             }  
         },
         "callUs": "致电"

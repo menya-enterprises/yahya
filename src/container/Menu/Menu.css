@@ -1,6 +1,7 @@
 .app__menu {
     flex-direction: column;
     background-color: var(--color-black);
+    border-top: 1rem solid var(--color-gold);
 }
 
 .app__menu-carousel {

@@ -1,56 +1,82 @@
 import React from 'react';
-import { BsFillPlayFill, BsPauseFill } from "react-icons/bs";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
 
 import "./News.css";
-import images from '../../constants/images';
-import newsVideo from "../../assets/promo_video.mp4"; // Change to your news video
+import newsVideo from "../../assets/promo_video.mp4";
 import { useTranslation } from 'react-i18next';
+import news from "../../constants/news.json";
+import NewsModal from "../../components/NewsModal/NewsModal";
 
 function News() {
   const [t] = useTranslation("global");
-  const videoRef = React.useRef();
+  const [extended, setExtended] = React.useState(false);
+  const [selectedNews, setSelectedNews] = React.useState(null);
+
+  const scrollToNews = () => {
+    const newsSection = document.getElementById("news");
+    if (newsSection) {
+      newsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleSeeFull = (newsItem) => {
+    setSelectedNews(newsItem);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const handleCloseModal = () => {
+    setSelectedNews(null);
+    document.body.style.overflow = '';
+  };
 
   return (
-    <div className='app__news section__padding app__wrapper' id="news">
-      <h1 className='headtext__tenor'>News</h1>
-      <div className='app__news-video'>
+    <div className='app__news section__padding app__wrapper app__bg' id="news">
+      <h1 className='headtext__tenor'>{t("navbar.news")}</h1>
+      {/* <div className='app__news-video'>
         <video
-        src={newsVideo}
-        type="video/mp4"
-        muted
-        loop
-        controls={false}
-        autoPlay
-        playsInline
+          src={newsVideo}
+          type="video/mp4"
+          muted
+          loop
+          controls={false}
+          autoPlay
+          playsInline
         />
-        <div className='app__aboutUs-video_overlay flex__center'>
-        </div>
-      </div>
+        <div className='app__aboutUs-video_overlay flex__center'></div>
+      </div> */}
+      
       <div className="app__news-content section__padding">
-        <div className='news__content-item'>
-          <h1 className='p__tenor'>Richmond BC</h1>
-          <p className='p__opensans'>Apr. 16, 2024</p>
-          <p className='p__opensans'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <a className='news__content-link p__opensans'>Find more</a>
-        </div>
-        <div className='news__content-item'>
-          <h1 className='p__tenor'>Welcome to our restaraunt!</h1>
-          <p className='p__opensans'>Apr. 16, 2024</p>
-          <p className='p__opensans'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <a className='news__content-link p__opensans'>Find more</a>
-        </div>
-        <div className='news__content-item'>
-          <h1 className='p__tenor'>We are open!</h1>
-          <p className='p__opensans'>Apr. 16, 2024</p>
-          <p className='p__opensans'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <a className='news__content-link p__opensans'>Find more</a>
-        </div>
-        <a className='news__content-link p__opensans' style={{paddingRight:"1rem"}}>See all</a>
+        {extended ? (
+          <div className='news__content-holder'>
+            {news.map((element) => (
+              <div className='news__content-item' key={element.id}>
+                <h1 className='p__tenor'>{element.title}</h1>
+                <p className='p__opensans'>{element.date}</p>
+                <p className='p__opensans'>{element.content}</p>
+                <button className='news__content-link p__opensans' onClick={() => handleSeeFull(element)}>See Full</button>
+              </div>
+            ))}
+            <button className='news__content-link p__opensans' style={{paddingRight:"1rem", bottom: 0, paddingBottom: "2rem"}} onClick={() => {setExtended(false); scrollToNews()}}>Hide all</button>
+          </div>
+        ) : (
+          <div className='news__content-holder'>
+            {news.slice(-3).map((element) => (
+              <div className='news__content-item' key={element.id}>
+                <h1 className='p__tenor'>{element.title}</h1>
+                <p className='p__opensans'>{element.date}</p>
+                <p className='p__opensans'>{element.content}</p>
+                <button className='news__content-link p__opensans' onClick={() => handleSeeFull(element)}>See Full</button>
+              </div>
+            ))}
+            <button className='news__content-link p__opensans' style={{paddingRight:"1rem", bottom: 0, paddingBottom: "2rem"}} onClick={() => {setExtended(true); scrollToNews()}}>See all</button>
+          </div>
+        )}
+        {selectedNews && (
+          <NewsModal newsItem={selectedNews} onClose={handleCloseModal} />
+        )}
       </div>
     </div>
-  )
+  );
 }
 
 export default News;

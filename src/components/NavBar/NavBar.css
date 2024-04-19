@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: var(--color-black);
+    /* background: var(--color-black); */
 }
 
 .app__navbar-logo {
@@ -84,7 +84,7 @@
     z-index: 5;
 }
 
-.app__navbar-smallscreen_overlay .overlay__close {
+.overlay__close {
     font-size: 27px;
     color: var(--color-lightSilver);
     cursor: pointer;
@@ -200,6 +200,6 @@
     }
 
     .app__navbar-logo img {
-        width: 110px;
+        width: 150px;
     }
 }

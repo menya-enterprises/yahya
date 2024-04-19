@@ -4,6 +4,7 @@
     color: var(--color-gold);
     position: relative;
     flex-direction: column;
+    border-top: 1rem solid var(--color-gold);
 }
 
 .app__gallery-carousel {
