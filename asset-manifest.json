@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/yahyahya/static/css/main.9bddefa5.css",
-    "main.js": "/yahyahya/static/js/main.035a234c.js",
-    "static/media/about-us.mp4": "/yahyahya/static/media/about-us.1b7016390e900937aec7.mp4",
+    "main.css": "/yahyahya/static/css/main.41f910f5.css",
+    "main.js": "/yahyahya/static/js/main.492e0f34.js",
+    "static/media/about-us.mp4": "/yahyahya/static/media/about-us.5ce7d5be960ccef96533.mp4",
     "static/media/background.png": "/yahyahya/static/media/background.3d421b1b5682e1b67deb.png",
     "static/media/promo_video.mp4": "/yahyahya/static/media/promo_video.208af97772ab032928a2.mp4",
     "static/media/826393.jpg": "/yahyahya/static/media/826393.d07aa0f0cefaa7caf6e6.jpg",
@@ -19,13 +19,13 @@
     "static/media/1867123.jpg": "/yahyahya/static/media/1867123.7f96f78151c6109bb8b8.jpg",
     "static/media/1867117.jpg": "/yahyahya/static/media/1867117.209d0432a134668c3582.jpg",
     "static/media/1867118.jpg": "/yahyahya/static/media/1867118.209d0432a134668c3582.jpg",
-    "static/media/logo.png": "/yahyahya/static/media/logo.512dd94f18a20a80aeff.png",
     "static/media/1867121.jpg": "/yahyahya/static/media/1867121.e67a787b7e1a0c46088a.jpg",
     "static/media/1867119.jpg": "/yahyahya/static/media/1867119.238614b1bddc0226d7f5.jpg",
     "static/media/1867120.jpg": "/yahyahya/static/media/1867120.238614b1bddc0226d7f5.jpg",
     "static/media/826383.jpg": "/yahyahya/static/media/826383.df9a57f9f94a5c677347.jpg",
     "static/media/1867130.jpg": "/yahyahya/static/media/1867130.43d7599ba74a290ee8ed.jpg",
     "static/media/1867131.jpg": "/yahyahya/static/media/1867131.43d7599ba74a290ee8ed.jpg",
+    "static/media/logo.png": "/yahyahya/static/media/logo.eb21457b68dd23be3cff.png",
     "static/media/1867128.jpg": "/yahyahya/static/media/1867128.2be63290a2bb9ba77a57.jpg",
     "static/media/1867129.jpg": "/yahyahya/static/media/1867129.2be63290a2bb9ba77a57.jpg",
     "static/media/store_richmond.jpg": "/yahyahya/static/media/store_richmond.d11197144f0d32e14380.jpg",
@@ -57,11 +57,11 @@
     "static/media/1867145.jpg": "/yahyahya/static/media/1867145.f78840943f9ee2d1d634.jpg",
     "static/media/826400.jpg": "/yahyahya/static/media/826400.401a5f94f29099fb3b99.jpg",
     "index.html": "/yahyahya/index.html",
-    "main.9bddefa5.css.map": "/yahyahya/static/css/main.9bddefa5.css.map",
-    "main.035a234c.js.map": "/yahyahya/static/js/main.035a234c.js.map"
+    "main.41f910f5.css.map": "/yahyahya/static/css/main.41f910f5.css.map",
+    "main.492e0f34.js.map": "/yahyahya/static/js/main.492e0f34.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bddefa5.css",
-    "static/js/main.035a234c.js"
+    "static/css/main.41f910f5.css",
+    "static/js/main.492e0f34.js"
   ]
 }
