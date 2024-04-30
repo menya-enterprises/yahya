@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/yahyahya/static/css/main.cddf725a.css",
-    "main.js": "/yahyahya/static/js/main.54f06957.js",
+    "main.css": "/yahyahya/static/css/main.0565d86e.css",
+    "main.js": "/yahyahya/static/js/main.a47e28e0.js",
     "static/media/about-us.mp4": "/yahyahya/static/media/about-us.9611d0e9459540b23674.mp4",
     "static/media/background.png": "/yahyahya/static/media/background.3d421b1b5682e1b67deb.png",
     "static/media/promo_video.mp4": "/yahyahya/static/media/promo_video.208af97772ab032928a2.mp4",
@@ -53,6 +53,7 @@
     "static/media/826395.jpg": "/yahyahya/static/media/826395.704f481666d0ccc07adc.jpg",
     "static/media/ramen_header.jpg": "/yahyahya/static/media/ramen_header.7e3d2b872e6a4e27f0da.jpg",
     "static/media/Gyoza Set.jpg": "/yahyahya/static/media/Gyoza Set.959cdbabee5048415758.jpg",
+    "static/media/front.jpg": "/yahyahya/static/media/front.610ab4f1d27660cf83c2.jpg",
     "static/media/Cold Ramen 2.jpg": "/yahyahya/static/media/Cold Ramen 2.2f16ffc73ec0fa429ee4.jpg",
     "static/media/Vegan Ramen.jpg": "/yahyahya/static/media/Vegan Ramen.94d4fcdb5b1f2f479768.jpg",
     "static/media/Cold Ramen 1.jpg": "/yahyahya/static/media/Cold Ramen 1.2839987dfb03469eb2c3.jpg",
@@ -69,6 +70,8 @@
     "static/media/Salmon Set 2.jpg": "/yahyahya/static/media/Salmon Set 2.007d444d5042ce1f196f.jpg",
     "static/media/Chashu Set 2.jpg": "/yahyahya/static/media/Chashu Set 2.3d2c146371cb565b8e22.jpg",
     "static/media/Chashu Set 1.jpg": "/yahyahya/static/media/Chashu Set 1.7464cebb69b05957ba75.jpg",
+    "static/media/back.jpg": "/yahyahya/static/media/back.0bd66c0a1e21f095a4f0.jpg",
+    "static/media/summer.jpg": "/yahyahya/static/media/summer.c9b6a8f8614b8a697b6e.jpg",
     "static/media/Mentaiko Set.jpg": "/yahyahya/static/media/Mentaiko Set.d5650bcc4a3a2491b89c.jpg",
     "static/media/Tantanmen-4.jpg": "/yahyahya/static/media/Tantanmen-4.5e3cc3013738d2c1c4b4.jpg",
     "static/media/1867135.jpg": "/yahyahya/static/media/1867135.a8064fe3a59bbb3bf185.jpg",
@@ -125,11 +128,11 @@
     "static/media/1867145.jpg": "/yahyahya/static/media/1867145.f78840943f9ee2d1d634.jpg",
     "static/media/826400.jpg": "/yahyahya/static/media/826400.401a5f94f29099fb3b99.jpg",
     "index.html": "/yahyahya/index.html",
-    "main.cddf725a.css.map": "/yahyahya/static/css/main.cddf725a.css.map",
-    "main.54f06957.js.map": "/yahyahya/static/js/main.54f06957.js.map"
+    "main.0565d86e.css.map": "/yahyahya/static/css/main.0565d86e.css.map",
+    "main.a47e28e0.js.map": "/yahyahya/static/js/main.a47e28e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.cddf725a.css",
-    "static/js/main.54f06957.js"
+    "static/css/main.0565d86e.css",
+    "static/js/main.a47e28e0.js"
   ]
 }
