@@ -51,6 +51,11 @@ import img1867135 from "../assets/menu/1867135.jpg"
 import img826393 from "../assets/menu/826393.jpg"
 import chef from "../assets/chef.png";
 import store_richmond from "../assets/store_richmond.jpg";
+import menu_back from "../assets/menu_catalog/back.jpg"
+import menu_front from "../assets/menu_catalog/front.jpg"
+import menu_summer from "../assets/menu_catalog/summer.jpg"
+
+
 
 // eslint-disable-next-line
 export default {
@@ -59,6 +64,9 @@ export default {
   background,
   ramen,
   chef,
+  menu_back,
+  menu_front,
+  menu_summer,
   store_richmond,
   img1867117,
   img1867118,

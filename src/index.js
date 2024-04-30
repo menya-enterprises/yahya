@@ -7,6 +7,14 @@ import global_en from "./translations/en/global.json";
 import global_jp from "./translations/jp/global.json";
 import global_cn from "./translations/cn/global.json";
 
+import news_en from "./translations/en/news.json";
+import news_jp from "./translations/jp/news.json";
+import news_cn from "./translations/cn/news.json";
+
+import dishes_en from "./translations/en/dishes.json";
+import dishes_jp from "./translations/jp/dishes.json";
+import dishes_cn from "./translations/cn/dishes.json";
+
 import i18next from "i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { I18nextProvider } from 'react-i18next';
@@ -31,13 +39,19 @@ i18next
     supportedLng: ['en', 'ja', 'zh'],
     resources: {
         en: {
-          global: global_en
+          global: global_en,
+          news: news_en,
+          dishes: dishes_en
         },
         ja: {
-          global: global_jp
+          global: global_jp,
+          news: news_jp,
+          dishes: dishes_jp
         },
         zh: {
-          global: global_cn
+          global: global_cn,
+          news: news_cn,
+          dishes: dishes_cn
         }
     }
   })

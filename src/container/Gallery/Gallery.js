@@ -2,12 +2,12 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import images from '../../constants/images'
 import { useTranslation } from 'react-i18next';
+import gallery from '../../constants/gallery';
 
 import "./Gallery.css"; // Assuming you'll create this CSS file for styling
 
 function Gallery() {
-  const [t] = useTranslation("global");
-
+  const [t] = useTranslation(["global", "dishes"]);
   return (
     <div className='app__gallery section__padding app__wrapper app__bg' id="gallery">
         <h1 className='headtext__tenor'>{t("navbar.gallery")}</h1>
@@ -16,29 +16,20 @@ function Gallery() {
             dynamicHeight={false}
             emulateTouch={true} 
             showThumbs={false} 
-            showStatus={false} 
-            autoPlay={true} 
-            interval={1235000}
+            showStatus={true} 
+            showIndicators={false}
+            preventMovementUntilSwipeScrollTolerance={true}
             className='app__gallery-carousel'
         >
-            <div className='gallery__item'>
+        {Object.entries(gallery).map(([key, picture]) => (
+            <div className='gallery__item' key={key}>
                 <div className="gallery__item-img">
-                    <img src={images.img1867115} alt="Image 1" />
-                    <p className="p__opensans legend">Drink</p>
+                    <img src={picture.file} alt={picture.alt} />
+                    <p className="p__opensans legend">{t(`dishes.${picture.alt}`, { ns: 'dishes'})}</p>
                 </div>
             </div>
-            <div className='gallery__item'>
-                <div className="gallery__item-img">
-                    <img src={images.img1867118} alt="Image 2" />
-                    <p className="p__opensans legend">Ramen Name</p>
-                </div>
-            </div>
-            <div className='gallery__item'>
-                <div className="gallery__item-img">
-                    <img src={images.img1867120} alt="Image 3" />
-                    <p className="p__opensans legend">Ramen Name</p>
-                </div>
-            </div>
+        ))}
+
         </Carousel>
     </div>
   )

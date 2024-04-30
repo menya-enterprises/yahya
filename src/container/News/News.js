@@ -4,11 +4,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./News.css";
 import newsVideo from "../../assets/promo_video.mp4";
 import { useTranslation } from 'react-i18next';
-import news from "../../constants/news.json";
+// import news from "../../constants/news.json";
 import NewsModal from "../../components/NewsModal/NewsModal";
 
 function News() {
-  const [t] = useTranslation("global");
+  const [t] = useTranslation(["global", "news"]);
   const [extended, setExtended] = React.useState(false);
   const [selectedNews, setSelectedNews] = React.useState(null);
 
@@ -18,6 +18,8 @@ function News() {
       newsSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const news = (t("news", { ns: 'news', returnObjects: true }));
 
   const handleSeeFull = (newsItem) => {
     setSelectedNews(newsItem);

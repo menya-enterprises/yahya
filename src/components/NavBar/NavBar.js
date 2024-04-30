@@ -14,33 +14,46 @@ function NavBar({handleChangeLanguage}) {
 
   return (
     <nav className='app__navbar'>
-      <div className="app__navbar-logo">
-        <a href='/'><img src={images.logo} alt="logo" /></a> 
+      <div className="app__navbar-top">
+        <div className="app__navbar-logo">
+          <a href='/'><img src={images.logo} alt="logo" /></a>
+        </div>
+        <ul className='app__navbar-links'>
+          {/* <li className="p__opensans"><a href='#home'>{t("navbar.home")}</a></li> */}
+          <li className="p__opensans"><a href='#about'>{t("navbar.about")}</a></li>
+          <li className="p__opensans"><a href='#menu'>{t("navbar.menu")}</a></li>
+          <li className="p__opensans"><a href='#news'>{t("navbar.news")}</a></li>
+          <li className="p__opensans"><a href='#gallery'>{t("navbar.gallery")}</a></li>
+          <li className="p__opensans"><a href='#contact'>{t("navbar.contact")}</a></li>
+        </ul>
+        <div className="app__navbar-lang">
+          <li className="dropdown">
+              <button className="dropdown-button"><FaLanguage size={32} /></button>
+              <div className="dropdown-content">
+                  <button onClick={(e) => handleChangeLanguage((e.target.innerText).toLowerCase())}>EN</button>
+                  <button onClick={(e) => handleChangeLanguage((e.target.innerText).toLowerCase())}>JA</button>
+                  <button onClick={(e) => handleChangeLanguage(("zh").toLowerCase())}>CN</button>
+              </div>
+          </li>
+        </div>
+        <div className='app__navbar-order'>
+          <a href='https://www.doordash.com/en-CA/store/yah-yah-ya-ramen-richmond-576879/' className='p__opensans' target='_blank' rel="noreferrer">Doordash</a>
+          <div/>
+          <a href='https://www.fantuanorder.com/store/yah-yah-ya-ramen/ca-5202/' className='p__opensans' target='_blank' rel="noreferrer">Fantuan</a>
+        </div>
       </div>
-      <ul className='app__navbar-links'>
-        {/* <li className="p__opensans"><a href='#home'>{t("navbar.home")}</a></li> */}
-        <li className="p__opensans"><a href='#about'>{t("navbar.about")}</a></li>
-        <li className="p__opensans"><a href='#menu'>{t("navbar.menu")}</a></li>
-        <li className="p__opensans"><a href='#news'>{t("navbar.news")}</a></li>
-        <li className="p__opensans"><a href='#gallery'>{t("navbar.gallery")}</a></li>
-        <li className="p__opensans"><a href='#contact'>{t("navbar.contact")}</a></li>
-      </ul>
-      <div className="app__navbar-lang">
-        <li className="dropdown">
-            <button className="dropdown-button"><FaLanguage size={32} /></button>
-            <div className="dropdown-content">
-                <button onClick={(e) => handleChangeLanguage((e.target.innerText).toLowerCase())}>EN</button>
-                <button onClick={(e) => handleChangeLanguage((e.target.innerText).toLowerCase())}>JA</button>
-                <button onClick={(e) => handleChangeLanguage(("zh").toLowerCase())}>CN</button>
-            </div>
-        </li>
-      </div>
-      <div className='app__navbar-order'>
-        <a href='https://www.doordash.com/en-CA/store/yah-yah-ya-ramen-richmond-576879/' className='p__opensans' target='_blank' rel="noreferrer">Doordash</a>
-        <div/>
-        <a href='https://www.fantuanorder.com/store/yah-yah-ya-ramen/ca-5202/' className='p__opensans' target='_blank' rel="noreferrer">Fantuan</a>
-      </div>
-      <div className='app__navbar-smallscreen'>
+      <div className="app__navbar-bottom">
+        <div className="app__navbar-lang">
+          <li className="dropdown">
+              <button className="dropdown-button"><FaLanguage size={32} /></button>
+              <div className="dropdown-content">
+                  <button onClick={(e) => handleChangeLanguage((e.target.innerText).toLowerCase())}>EN</button>
+                  <button onClick={(e) => handleChangeLanguage((e.target.innerText).toLowerCase())}>JA</button>
+                  <button onClick={(e) => handleChangeLanguage(("zh").toLowerCase())}>CN</button>
+              </div>
+          </li>
+        </div>
+        <div className='app__navbar-smallscreen'>
         <GiHamburgerMenu color='#fff' fontSize={27} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
           <div className='app__navbar-smallscreen_overlay flex__center slide-bottom'>
@@ -65,6 +78,8 @@ function NavBar({handleChangeLanguage}) {
           </div>
         )}
       </div>
+      </div>
+     
     </nav>
   )
 }
