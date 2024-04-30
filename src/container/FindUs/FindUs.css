@@ -35,10 +35,11 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: 350px;
 }
 
 .identity-logo img {
-    width: 350px;
+    width: 100%;
 }
 
 .identity-map {
@@ -117,7 +118,7 @@ h1 {
 @media screen and (max-width: 450px) {
     .app__findUs-info {
         padding: 0;
-        width: 350px;
+        width: 250px;
     }
 
     .app__findUs {
@@ -127,11 +128,15 @@ h1 {
 
     .identity-map {
         height: 200px;
-        width: 350px;
+        max-width: 250px;
     }
 
     .app__findUs-identity {
         width: 350px;
+    }
+
+    .identity-logo {
+        width: 200px;
     }
 
     .headtext__tenor {

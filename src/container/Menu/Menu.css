@@ -40,6 +40,18 @@
     width: 100%;
 }
 
+.app__menu .tools {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.app__menu .tools .custom__button {
+    flex: 1;
+}
+
+
 /* @media screen and (max-width: 950px) {
     .inventory-item {
         flex-direction: column;

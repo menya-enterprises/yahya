@@ -39,5 +39,10 @@
             }  
         },
         "callUs": "Call Us"
+    },
+    "zoom": {
+        "zoom_in": "Zoom In",
+        "zoom_out": "Zoom Out",
+        "reset": "Reset"
     }
 }

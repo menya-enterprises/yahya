@@ -38,5 +38,10 @@
             }  
         },
         "callUs": "致电"
+    },
+    "zoom": {
+        "zoom_in": "放大",
+        "zoom_out": "缩小",
+        "reset": "重置"
     }
 }

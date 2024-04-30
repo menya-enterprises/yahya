@@ -16,12 +16,13 @@ import {
 
 const Controls = () => {
   const { zoomIn, zoomOut, resetTransform } = useControls();
+  const [t] = useTranslation(["global"]);
 
   return (
     <div className="tools" style={{margin:"1rem 0"}}>
-      <button className="custom__button" onClick={() => zoomIn()} style={{marginRight:"1rem"}}>Zoom in</button>
-      <button className="custom__button" onClick={() => zoomOut()} style={{marginRight:"1rem"}}>Zoom out</button>
-      <button className="custom__button" onClick={() => resetTransform()}>Reset</button>
+      <button className="custom__button" onClick={() => zoomIn()}>{t("zoom.zoom_in")}</button>
+      <button className="custom__button" onClick={() => zoomOut()}>{t("zoom.zoom_out")}</button>
+      <button className="custom__button" onClick={() => resetTransform()}>{t("zoom.reset")}</button>
     </div>
   );
 };
@@ -44,8 +45,6 @@ function Menu() {
           ))} */}
            <TransformWrapper
       initialScale={1}
-      initialPositionX={200}
-      initialPositionY={100}
     >
       {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
         <>
