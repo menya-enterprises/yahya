@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/yahyahya/static/css/main.132df685.css",
-    "main.js": "/yahyahya/static/js/main.d2f84610.js",
+    "main.css": "/yahyahya/static/css/main.1e6e5e40.css",
+    "main.js": "/yahyahya/static/js/main.f8b93921.js",
     "static/media/about-us.mp4": "/yahyahya/static/media/about-us.9611d0e9459540b23674.mp4",
     "static/media/background.png": "/yahyahya/static/media/background.59b6fa5b8df457a52f39.png",
     "static/media/promo_video.mp4": "/yahyahya/static/media/promo_video.208af97772ab032928a2.mp4",
@@ -45,7 +45,6 @@
     "static/media/Shoyu Ramen 2.jpg": "/yahyahya/static/media/Shoyu Ramen 2.39751cacf239ad431856.jpg",
     "static/media/Maze Soba 2.jpg": "/yahyahya/static/media/Maze Soba 2.cc6a7731ffe252cd4a32.jpg",
     "static/media/Yuzu Cold Ramen-1.jpg": "/yahyahya/static/media/Yuzu Cold Ramen-1.290bcde275cea90344f4.jpg",
-    "static/media/ramen_header.jpg": "/yahyahya/static/media/ramen_header.7e3d2b872e6a4e27f0da.jpg",
     "static/media/Gyoza Set.jpg": "/yahyahya/static/media/Gyoza Set.959cdbabee5048415758.jpg",
     "static/media/front.jpg": "/yahyahya/static/media/front.610ab4f1d27660cf83c2.jpg",
     "static/media/Cold Ramen 2.jpg": "/yahyahya/static/media/Cold Ramen 2.2f16ffc73ec0fa429ee4.jpg",
@@ -72,21 +71,22 @@
     "static/media/Onigiri Set 2.jpg": "/yahyahya/static/media/Onigiri Set 2.ba9f89197f27cf977ed7.jpg",
     "static/media/Chashu Set 3.jpg": "/yahyahya/static/media/Chashu Set 3.552bb39e74672c58f277.jpg",
     "static/media/Tsukemen-4.jpg": "/yahyahya/static/media/Tsukemen-4.3bfd765e629915cad22a.jpg",
+    "static/media/ramen_header.jpg": "/yahyahya/static/media/ramen_header.4efbe9af263de3e8fa2d.jpg",
     "static/media/Tsukemen-3.jpg": "/yahyahya/static/media/Tsukemen-3.db0045850980643412c0.jpg",
     "static/media/Takoyaki.jpg": "/yahyahya/static/media/Takoyaki.36c0d1f27790e7cc4756.jpg",
     "static/media/DF Gyoza.jpg": "/yahyahya/static/media/DF Gyoza.f6cb00d9b34f9d34967b.jpg",
     "static/media/OpenSans-Bold.ttf": "/yahyahya/static/media/OpenSans-Bold.c790f99966352c531503.ttf",
     "static/media/OpenSans-Regular.ttf": "/yahyahya/static/media/OpenSans-Regular.b8cc747a58ffa52b7ff9.ttf",
     "static/media/TenorSans-Regular.ttf": "/yahyahya/static/media/TenorSans-Regular.0d22289d38b3d37f95b6.ttf",
-    "static/media/logo.png": "/yahyahya/static/media/logo.eb21457b68dd23be3cff.png",
     "static/media/Veg. Mountain.jpg": "/yahyahya/static/media/Veg. Mountain.f9495a110bcf11c578ae.jpg",
     "static/media/Corn.jpg": "/yahyahya/static/media/Corn.c3425f271568d3acef3b.jpg",
+    "static/media/logo.png": "/yahyahya/static/media/logo.3f725736faa3b2209a08.png",
     "index.html": "/yahyahya/index.html",
-    "main.132df685.css.map": "/yahyahya/static/css/main.132df685.css.map",
-    "main.d2f84610.js.map": "/yahyahya/static/js/main.d2f84610.js.map"
+    "main.1e6e5e40.css.map": "/yahyahya/static/css/main.1e6e5e40.css.map",
+    "main.f8b93921.js.map": "/yahyahya/static/js/main.f8b93921.js.map"
   },
   "entrypoints": [
-    "static/css/main.132df685.css",
-    "static/js/main.d2f84610.js"
+    "static/css/main.1e6e5e40.css",
+    "static/js/main.f8b93921.js"
   ]
 }
