@@ -33,3 +33,46 @@
 body.modal-open {
     overflow: hidden;
 }
+
+.modal__gallery {
+    max-width: 100%;
+    height: 50vh;
+}
+
+.modal__gallery .slider {
+    height: 100%;
+}
+
+.modal__gallery .carousel-slider {
+    width: 100%;
+    height: 100%;
+}
+
+.modal__gallery li {
+    list-style: none;
+}
+
+.modal__gallery > div {
+    overflow: hidden;
+}
+
+.modal__gallery > div > div {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery__item {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery__item-img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery__item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

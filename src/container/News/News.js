@@ -48,7 +48,7 @@ function News() {
           </div>
         ) : (
           <div className='news__content-holder'>
-            {news.slice(-3).map((element) => (
+            {news.slice(0, 3).map((element) => (
               <div className='news__content-item' key={element.id}>
                 <h1 className='p__tenor'>{element.title}</h1>
                 <p className='p__opensans'>{element.date}</p>
